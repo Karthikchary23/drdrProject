@@ -15,7 +15,6 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-image-gallery": "^1.4.0",
-    "react-image-lightbox": "^5.1.4",
     "react-photo-view": "^1.2.7",
     "styled-components": "^6.1.19"
   },
