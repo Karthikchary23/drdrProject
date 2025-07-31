@@ -5,15 +5,13 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-tr from-gray-900 via-blue-950 to-gray-800 text-white px-6 py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {/* Brand */}
         <div>
           <h2 className="text-2xl font-bold text-blue-400 mb-3">Revon</h2>
           <p className="text-sm text-gray-300">
-            Empowering Innovation with Unmanned Solutions. Let's build the future together.
-          </p>
+  Empowering Innovation with Unmanned Solutions. Let&apos;s build the future together.
+</p>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h3 className="text-xl font-semibold mb-2 text-white">Quick Links</h3>
           <ul className="space-y-1 text-gray-400">
