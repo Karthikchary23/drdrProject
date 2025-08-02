@@ -45,11 +45,11 @@ const Navbar = () => {
     <nav className="flex items-center justify-between py-3 px-4 fixed top-0 w-full bg-white shadow-sm text-gray-800 z-50">
       <div className="flex items-center gap-2">
         <img
-          className="h-9 w-10 cursor-pointer"
-          src="https://imgs.search.brave.com/CS3K8rmCeTHjDYSjOom6BwCOSBlCriSVoOQe6mlPKhk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/dGhld2lyZWN1dHRl/ci5jb20vd3AtY29u/dGVudC9tZWRpYS8y/MDIyLzEwL2Ryb25l/cy0yMDQ4cHgtMDY5/OC5qcGc_YXV0bz13/ZWJwJnF1YWxpdHk9/NzUmd2lkdGg9MTAy/NA"
-          alt="Logo"
+          className="h-14 w-14 cursor-pointer"
+          src="/Logo.jpg"
+          alt="Rovera"
         />
-        <h4 className="text-base font-semibold text-gray-900">Company Name</h4>
+        <h4 className=" font-semibold  text-2xl text-green-950">Rovera</h4>
       </div>
 
       {/* Desktop menu */}

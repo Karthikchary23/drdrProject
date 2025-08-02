@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-gradient-to-tr from-gray-900 via-blue-950 to-gray-800 text-white px-6 py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
-          <h2 className="text-2xl font-bold text-blue-400 mb-3">Revon</h2>
+          <h2 className="text-2xl font-bold text-blue-400 mb-3">Rovera</h2>
           <p className="text-sm text-gray-300">
   Empowering Innovation with Unmanned Solutions. Let&apos;s build the future together.
 </p>
@@ -22,7 +22,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact Info */}
+       
         <div>
           <h3 className="text-xl font-semibold mb-2 text-white">Contact</h3>
           <p className="text-gray-300 text-sm">Plot No 36, Pragati Colony,<br />Meerpet, Hyderabad - 500097</p>
@@ -30,7 +30,7 @@ const Footer = () => {
           <p className="text-gray-300 text-sm">📞 +91 7780-661247</p>
         </div>
 
-        {/* Social Links */}
+        
         <div>
           <h3 className="text-xl font-semibold mb-2 text-white">Follow Us</h3>
           <div className="flex space-x-4 text-blue-400 text-xl">
