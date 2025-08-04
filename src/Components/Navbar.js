@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-const sections = ["home", "about", "gallery", "services", "contact"];
+const sections = ["home", "about","features", "services", "contact"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +42,7 @@ const Navbar = () => {
     } hover:text-blue-600 cursor-pointer transition-colors duration-200`;
 
   return (
-    <nav className="flex items-center justify-between py-3 px-4 fixed top-0 w-full bg-white shadow-sm text-gray-800 z-50">
+    <nav className="flex items-center justify-between py-1.5 px-4 fixed top-0 w-full bg-white shadow-sm text-gray-800 z-50">
       <div className="flex items-center gap-2">
         <img
           className="h-14 w-14 cursor-pointer"

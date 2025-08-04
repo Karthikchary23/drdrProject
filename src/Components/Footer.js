@@ -25,9 +25,9 @@ const Footer = () => {
        
         <div>
           <h3 className="text-xl font-semibold mb-2 text-white">Contact</h3>
-          <p className="text-gray-300 text-sm">Plot No 36, Pragati Colony,<br />Meerpet, Hyderabad - 500097</p>
-          <p className="text-gray-300 text-sm mt-2">📧 revonunmanned@gmail.com</p>
-          <p className="text-gray-300 text-sm">📞 +91 7780-661247</p>
+          <p className="text-gray-300 text-sm">T-Block TKR College Of Engineering & Technology Survey no:80/A, Medbowli, Meerpet, Hyderabad,Telangana,India,500097<br />Meerpet, Hyderabad - 500097</p>
+          <p className="text-gray-300 text-sm mt-2">📧 drdrtech12@gmail.com</p>
+          <p className="text-gray-300 text-sm">📞 +91 9704576076</p>
         </div>
 
         
@@ -43,7 +43,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-sm text-gray-400 mt-10 border-t border-gray-700 pt-4">
-        © {new Date().getFullYear()} Revon Unmanned Systems. All rights reserved.
+        © {new Date().getFullYear()} Rovera Unmanned Systems. All rights reserved.
       </div>
     </footer>
   );

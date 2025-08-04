@@ -30,7 +30,7 @@ const Gallery = () => {
 
   <SplitText
     text="Gallery"
-    className="relative text-5xl font-semibold text-black drop-shadow-2xl"
+    className="relative text-3xl md:text-5xl font-semibold text-black drop-shadow-2xl"
     delay={100}
     duration={0.6}
     ease="power3.out"

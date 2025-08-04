@@ -6,6 +6,7 @@ import Projects from '@/Components/Gallary'
 import Services from '@/Components/Services'
 import Contact from '@/Components/Contact'
 import Footer from '@/Components/Footer'
+import Features from '@/Components/Features'
 
 const page = () => {
   return (
@@ -14,7 +15,8 @@ const page = () => {
       
         <Home/>
       <About/>
-      <Projects/>
+      {/* <Projects/> */}
+      <Features/>
       <Services/>
       <Contact/>
       <Footer/>

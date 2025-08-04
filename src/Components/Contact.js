@@ -12,7 +12,7 @@ const Contact = () => {
     event.preventDefault();
     setResult("Sending...");
     const formData = new FormData(event.target);
-    formData.append("access_key", "d039f4de-d0ce-45dd-b388-253da397d7e1");
+    formData.append("access_key", "92c534e4-9bba-4e2a-9649-49e6e85e45dc");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="text-center mb-12">
         <SplitText
           text="Contact Us"
-          className="text-4xl sm:text-5xl font-extrabold text-black"
+          className="text-3xl md:text-5xl font-extrabold text-black"
           delay={100}
           duration={0.6}
           ease="power3.out"
@@ -56,14 +56,14 @@ const Contact = () => {
             <FaMapMarkerAlt />
           </div>
           <h4 className="text-xl font-semibold mb-1">Our Address</h4>
-          <p className="text-sm">Plot No 36, Pragati Colony, Meerpet, Hyderabad, 500097.</p>
+          <p className="text-sm">T-Block TKR College Of Engineering & Technology Survey no:80/A, Medbowli, Meerpet, Hyderabad,Telangana,India,500097.</p>
         </div>
         <div className="bg-white rounded-xl p-6 shadow-md text-center hover:shadow-xl transition-all">
           <div className="text-blue-600 text-3xl mb-4 flex justify-center">
             <FaEnvelope />
           </div>
           <h4 className="text-xl font-semibold mb-1">Email Us</h4>
-          <p className="text-sm text-blue-600">revonunmanned@gmail.com</p>
+          <p className="text-sm text-blue-600">drdrtech12@gmail.com</p>
         </div>
         <div className="bg-white rounded-xl p-6 shadow-md text-center hover:shadow-xl transition-all">
           <div className="text-blue-600 text-3xl mb-4 flex justify-center">

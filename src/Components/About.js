@@ -12,7 +12,7 @@ const About = () => {
         <div className="pt-10 px-6 sm:px-10 md:px-16 lg:pt-20 lg:pl-20">
           <SplitText
             text="About Us!"
-            className="text-3xl font-semibold text-center text-black drop-shadow-2xl mb-6"
+            className="text-3xl md:text-4xl font-semibold text-center text-black drop-shadow-2xl mb-6"
             delay={100}
             duration={0.6}
             ease="power3.out"
