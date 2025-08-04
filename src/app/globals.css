@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+body {
+  font-family: var(--font-merriweather);
+}
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

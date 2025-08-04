@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="text-center mb-12">
         <SplitText
           text="Contact Us"
-          className="text-3xl md:text-5xl font-extrabold text-black"
+          className="text-3xl md:text-5xl font-semibold text-black"
           delay={100}
           duration={0.6}
           ease="power3.out"
