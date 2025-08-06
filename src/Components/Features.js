@@ -20,7 +20,7 @@ const features = [
     description: "Eco-friendly automated weed control systems.",
   },
   {
-    title: "Delivery (Drone/Robot)",
+    title: "Delivery Robot",
     icon: <FaTruck className="text-blue-600 text-4xl" />,
     description: "Autonomous delivery of food, medicine, and supplies using drones or robots.",
   },

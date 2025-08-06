@@ -43,7 +43,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-sm text-gray-400 mt-10 border-t border-gray-700 pt-4">
-        © {new Date().getFullYear()} Rovera Unmanned Systems. All rights reserved.
+        © {new Date().getFullYear()} Rovera . All rights reserved.
       </div>
     </footer>
   );

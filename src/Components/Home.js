@@ -33,7 +33,7 @@ const Home = () => {
           />
 
           <p
-            className=" font-serif text-lg md:text-xl max-w-3xl text-white/90 leading-relaxed "
+            className=" font-serif text-md md:text-xl max-w-3xl text-white/90 leading-relaxed "
             data-aos="fade-up"
           >
             Rovera is a pioneering company from India, focused on developing cutting-edge autonomous rovers for exploration, defense, and industrial automation.

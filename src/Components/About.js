@@ -1,66 +1,109 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Slider from "react-slick";
 import SplitText from "./Text";
 
 const About = () => {
+  const textVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.15, duration: 0.6, ease: "easeOut" },
+    }),
+  };
+
+  const carouselImages = [
+    "/Image1.jpg",
+    "/Image2.jpg",
+    "/Image4.png",
+  ];
+
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
   return (
-    <section
-      id="about"
-      className="min-h-[65vh] text-black scroll-mt-16 mt-5 mb-5"
-    >
-      <div className="grid grid-cols-1 lg:grid-cols-2 bg-white shadow-lg rounded-2xl overflow-hidden">
-        {/* Left Text Content */}
-        <div className="pt-10 px-6 sm:px-10 md:px-16 lg:pt-20 lg:pl-20">
+    <section id="about" className="bg-white py-20 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        {/* Text Content */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={textVariants}
+          className="space-y-8"
+        >
           <SplitText
-            text="About Us!"
-            className="text-3xl md:text-4xl font-semibold text-center text-black drop-shadow-2xl mb-6"
+            text="About Rovera"
+            className="text-3xl md:text-4xl font-semibold text-black"
             delay={100}
-            duration={0.6}
-            ease="power3.out"
+            duration={0.2}
+            ease="power4.out"
             splitType="chars"
             from={{ opacity: 0, y: 40 }}
             to={{ opacity: 1, y: 0 }}
             threshold={0.1}
             rootMargin="-100px"
-            textAlign="center"
           />
 
-          <p className="text-sm sm:text-base leading-relaxed text-justify mb-4">
-            <strong>DRDR Technologies Pvt. Ltd.</strong>, operating under the brand <strong>ROVERA</strong>, is a forward-thinking robotics company committed to developing intelligent, electric-powered, and autonomous ground mobility solutions. Our core mission is to empower small and marginal farmers, agri-entrepreneurs, and last-mile delivery operators through affordable and accessible robotic technology.
-          </p>
+          <div className="space-y-6">
+            <p className="text-base md:text-lg text-gray-800 leading-relaxed">
+              <span className="font-semibold text-blue-600">DRDR Technologies Pvt. Ltd.</span>, branded as <span className="font-bold">ROVERA</span>, pioneers AI-powered autonomous ground rovers. Our electric rovers revolutionize labor-intensive tasks in agriculture and delivery, delivering cost-effective, sustainable robotics solutions. We empower industries with intelligent automation that drives efficiency and innovation.
+            </p>
 
-          <p className="text-sm sm:text-base leading-relaxed text-justify mb-4">
-            At ROVERA, we’re revolutionizing agriculture and logistics by engineering compact, AI-enabled rovers that tackle real-world challenges with precision and efficiency. From field automation to autonomous delivery, our solutions are crafted for impact across rural and urban India.
-          </p>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Our Mission</h3>
+              <p className="text-gray-700">
+                To craft smart, affordable autonomous machines that simplify hazardous and tedious agricultural tasks, enabling practical, real-world impact.
+              </p>
+            </div>
 
-          <ul className="list-disc ml-5 text-sm sm:text-base leading-relaxed mb-4">
-            <li>
-              <strong>Lightweight Multi-Purpose Agri Rover:</strong> Covers 30 acres/day, ideal for spraying, fertilizing, and laser-based weeding in large-scale farms or rental setups.
-            </li>
-            <li>
-              <strong>Compact Autonomous Agri Rover:</strong> Optimized for small farms (up to 15 acres /day), supporting post-sowing tasks with AI-based automation.
-            </li>
-            <li>
-              <strong>Delivery Rover:</strong> Built for last-mile logistics, equipped with 5G, obstacle detection, and traffic-aware navigation for rural and urban settings.
-            </li>
-          </ul>
-
-          <p className="text-sm sm:text-base leading-relaxed text-justify">
-            <strong>Our Vision:</strong> To democratize advanced robotics for rural India and beyond—boosting productivity, reducing manual labor, and creating data-driven agricultural and delivery ecosystems.
-          </p>
-        </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">Our Vision</h3>
+              <p className="text-gray-700">
+                To lead the future of autonomous ground robotics, transforming agriculture and logistics with sustainable, intelligent technologies that redefine efficiency.
+              </p>
+            </div>
+          </div>
+        </motion.div>
 
         
-        <div className="flex justify-center items-center p-6 lg:p-10">
-          <Image
-            src="/Image2.jpg"
-            alt="About ROVERA"
-            width={800}
-            height={500}
-            className="w-full max-w-md sm:max-w-lg h-auto object-contain rounded-2xl"
-            priority
-          />
-        </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.98 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="relative w-full rounded-2xl overflow-hidden"
+        >
+          <Slider {...sliderSettings}>
+            {carouselImages.map((src, index) => (
+              <div key={index} className="relative aspect-[4/3] w-full">
+                <Image
+                  src={src}
+                  alt={`Rovera Carousel ${index + 1}`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-2xl"
+                  priority={index === 0}
+                />
+                <div className="absolute bottom-4 left-4 text-white bg-black/40 px-3 py-1 rounded-md">
+                  <p className="text-sm font-semibold">Rovera Autonomous Rover</p>
+                  <p className="text-xs">Innovating Agriculture & Logistics</p>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </motion.div>
       </div>
     </section>
   );
