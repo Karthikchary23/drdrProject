@@ -70,8 +70,8 @@ const Contact = () => {
             <FaPhoneAlt />
           </div>
           <h4 className="text-xl font-semibold mb-1">Call Us</h4>
-          <p className="text-sm text-blue-600">+91 7780-661247</p>
-          <p className="text-sm text-blue-600">+91 73969-44415</p>
+          <p className="text-sm text-blue-600">+91 97045-76076</p>
+          <p className="text-sm text-blue-600">+91 70755-82211</p>
         </div>
       </div>
 
